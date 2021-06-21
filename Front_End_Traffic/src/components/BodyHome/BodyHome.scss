@@ -1,0 +1,10 @@
+@import "src/sass/variable";
+.admin-body{
+  display: $flex;
+  justify-content: $right;
+  width: 85%;
+  min-width: 85%;
+  flex-direction: $column;
+  height: $height;
+  min-height:  $height;
+}

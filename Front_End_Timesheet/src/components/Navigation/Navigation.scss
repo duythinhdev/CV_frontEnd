@@ -1,0 +1,181 @@
+@import "src/sass/variable";
+@import "src/sass/mixin";
+.nav-admin {
+    display: $flex;
+    justify-content: $left;
+    width: 15%;
+    height: 100vh;
+    background: $backgroung-nav;
+    flex-direction: $column;
+  .nav-adminHeader {
+    display: $flex;
+    flex-direction: $column;
+    width: 100%;
+    height: 14vh;
+    min-height: 14vh;
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 80%;
+      height: 7vh;
+    }
+
+    &__faceName {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 10vh;
+      max-width: 90%;
+      max-height: 7vh;
+      span {
+        color: #ffffff;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .nav-adminbody {
+      display: $flex;
+      flex-direction: $column;
+      width: 100%;
+      height: 53vh;
+      border-top: 1px solid #2A394F;
+      border-bottom: 1px solid #2A394F;
+      overflow-y: auto;
+      max-height: 53vh;
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #ffffff;
+    }
+    &__Main {
+      display: $flex;
+      justify-content: left;
+      width: 100%;
+      height: 5vh;
+      flex-wrap: wrap;
+      padding: 0.5rem 2.5rem;
+      //background: #61dafb;
+      cursor: pointer;
+      span {
+        flex-grow: 8;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: left;
+        flex-shrink: 0;
+      }
+      img{
+      }
+    }
+
+    &__Tab {
+      display: $flex;
+      width: 100%;
+      //background: #61dafb;
+      height: 5vh;
+      //&:hover {
+      //  border-left: 4px solid #4490FF;
+      //  cursor: pointer;
+      //  background: #2A394F;
+      //}
+
+      .nav-adminbody__Tab-img {
+        width: 30%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-adminbody__Tab-Text {
+        display: flex;
+        width: 70%;
+        height: 5vh;
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-style: normal;
+          font-size: 16px;
+          font-family: Roboto;
+          color: #FFFFFF;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .nav-adminFooter {
+    display: $flex;
+    flex-direction: $column;
+    width: 100%;
+    height: 33vh;
+    //background: #61dafb;
+    &__Name {
+      cursor: pointer;
+      display: $flex;
+      justify-content: left;
+      width: 100%;
+      height: 5vh;
+      flex-wrap: wrap;
+      padding: 0.5rem 2.5rem;
+      //background: #282c34;
+      span {
+        flex-grow: 4;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: left;
+        flex-shrink: 0;
+      }
+      &--img{
+        display: $flex;
+        //margin-left: 150px;
+      }
+    }
+    &__account{
+      display: $flex;
+      width: 100%;
+      //background: #61dafb;
+      height: 5vh;
+      &--img {
+        width: 30%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &--span {
+        display: flex;
+        width: 70%;
+        height: 5vh;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-style: normal;
+          font-size: 16px;
+          font-family: Roboto;
+          color: #FFFFFF;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

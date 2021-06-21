@@ -1,0 +1,35 @@
+@import "src/sass/variable";
+.nav--header__Home{
+  position: relative;
+  display: $flex;
+  width: 100%;
+  height: 6vh;
+  &:hover{
+    border-left: 4px solid #4490FF;
+    cursor: $pointer;
+    background: #2A394F;
+  }
+  //background: blue;
+  .nav--header__Home--img {
+    width: 30%;
+    height: 6vh;
+    display: $flex;
+    justify-content: $center;
+    align-items: $center;
+  }
+  .nav--header__Home--Text{
+    display: $flex;
+    width: 70%;
+    height: 6vh;
+    span{
+      display: $flex;
+      justify-content: $center;
+      align-items: $center;
+      font-style: $normal;
+      font-size: 16px;
+      font-family: Roboto;
+      color: #FFFFFF;
+      font-weight: $normal;
+    }
+  }
+}

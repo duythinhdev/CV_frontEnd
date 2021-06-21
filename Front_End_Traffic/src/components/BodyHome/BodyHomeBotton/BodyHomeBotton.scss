@@ -1,0 +1,108 @@
+@import "src/sass/variable";
+.admin-body--bottom{
+  display: $flex;
+  width: 100%;
+  height:35vh;
+  &__left{
+    display: $flex;
+    margin-left: 30px;
+    width: 65%;
+    height: 35vh;
+    flex-direction: $column;
+    div{
+      color: #FFFFFF;
+      font-size: 1rem;
+      border-top-left-radius: $ten;
+      border-top-right-radius: $ten;
+      display: $flex;
+      background: $backgroud;
+      width: 100%;
+      height: 4vh;
+      span{
+        margin:5px;
+      }
+    }
+    table{
+      display: $flex;
+      width: 100%;
+      background: #EFF2F9;
+      height: 31vh;
+      overflow-y: $auto;
+      tbody{
+        flex-direction: $column;
+        display: $flex;
+        width: 100%;
+      }
+      td
+      {
+        position: relative;
+        border-radius: 5px;
+        background: #FFFFFF;
+        width: 5%;
+        height: 5vh;
+      }
+      tr{
+        text-align: center;
+        vertical-align: middle;
+        //margin: auto 0;
+        //display: flex;
+      }
+    }
+  }
+  &__right{
+    display: $flex;
+    margin-left: 30px;
+    width: 29%;
+    height: 37vh;
+    flex-direction: $column;
+    .title-sumary{
+      color: #FFFFFF;
+      font-size: 1rem;
+      border-top-left-radius: $ten;
+      border-top-right-radius: $ten;
+      display: $flex;
+      justify-content: left;
+      background: $backgroud;
+      width: 100%;
+      height: 4vh;
+      span{
+        margin:5px;
+      }
+    }
+    .cotainer-sumary{
+      flex-direction: $column;
+      width: 100%;
+      background: #EFF2F9;
+      height: 33vh;
+      display: $flex;
+      &__chart{
+        display: $flex;
+        justify-content: $center;
+        align-items: $center;
+        width: 100%;
+        height: 25vh;
+      }
+      &__button{
+        display: $flex;
+        height: 8vh;
+        width: 100%;
+        justify-content: $center;
+        button{
+          font-size: 15px;
+          margin: 5px;
+          width: 20%;
+          height: 5vh;
+          border: $none;
+          border-radius: 10px;
+          background: #FFFFFF;
+          cursor: $pointer;
+          outline: $none;
+          &:hover{
+            color: #FFFFFF;
+            background: #4490FF;
+          }
+        }
+      }
+    }
+  }
+}

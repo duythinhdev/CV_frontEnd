@@ -1,0 +1,14 @@
+@import "src/sass/variable";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background-admin{
+  background: $backgroundmain;
+  width: $width;
+  height: $height;
+  min-height: $height;
+  display: $flex;
+  overflow: $hidden;
+}
